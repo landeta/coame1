@@ -1,0 +1,95 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                    </div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" (submit)="editBlog( forma )" #forma="ngForm">
+
+                            <div class="form-group"><!-- Categoria-->                               
+                                <label for="categoria" class="col-sm-2 control-label">Categoria : </label>
+                                <div class="col-sm-8">
+                                    <select class="form-control" 
+                                            name="categoria" 
+                                            [(ngModel)]="blog.categoria"
+                                            required> 
+                                        <option *ngFor="let item of categorias"  [value]="item.categoria" name="categoria">
+                                              {{item.categoria}}
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group"><!--titulo-->                               
+                                <label for="titulo" class="col-sm-2 control-label">Titulo : </label>
+                                <div class="col-sm-8">
+                                    <input type="text" 
+                                        class="form-control" 
+                                        [ngModel]=blog.titulo 
+                                        name="titulo" 
+                                        value="blog.titulo">
+                                </div>
+                            </div>
+                            <div class="form-group"><!-- Autor-->                               
+                                <label for="autor" class="col-sm-2 control-label">Autor : </label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" [(ngModel)]="blog.autor" name="autor">
+                                </div>
+                            </div>                           
+                            <div class="form-group"><!-- Fecha -->                               
+                                <label for="fecha" class="col-sm-2 control-label">Fecha : </label>
+                                <div class="col-sm-8">
+                                    <input type="date" class="form-control" [(ngModel)]="blog.fecha" name="fecha">
+                                </div>
+                            </div>
+                            <div class="form-group"><!-- Texto-->
+                                <label for="texto" class="col-sm-2 control-label">Texto : </label>
+                                <span class="col-md-1 col-md-offset-2 text-center"><i
+                                        class="fa fa-pencil-square-o bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <textarea class="form-control" id="texto" [(ngModel)]="blog.texto" name="texto"
+                                        placeholder="Ingrese texto." rows="7"></textarea>
+                                </div>
+
+                                <!-- <label for="texto" class="col-sm-2 control-label">Texto : </label>
+                        <div class="col-sm-9">
+                            <input type="texto" class="form-control"  [(ngModel)]="blog.texto" name="texto">
+                      </div> -->
+                            </div>
+                            <div class="form-group"><!-- Imagen -->                               
+                                <label for="imagen" class="col-sm-2 control-label">Imagen : </label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" [(ngModel)]="blog.imagen" name="imagen">
+                                </div>
+                            </div>
+                            <div class="form-group"><!-- Estado -->                               
+                                <label for="estado" class="col-sm-2 control-label">Estado : </label>
+                                <div class="col-sm-8">
+                                    <input type="checkbox" lass="form-control" [(ngModel)]="blog.estado" name="estado" value="true" checked />     
+                                    <!-- <input type="text" class="form-control" [(ngModel)]="blog.estado" name="estado"> -->
+                                </div>
+                            </div>
+                            <div class="form-group"><!-- Tags -->                               
+                                <label for="tags" class="col-sm-2 control-label">Tags : </label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" [(ngModel)]="blog.tags" name="tags" placeholder="Agregar Tags separados por ',' comas.">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-8">
+                                    <button type="submit" class="btn btn-success">Save</button>
+                                    <a class="btn btn-info" (click)="goBack()">Cancel</a>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<br/>

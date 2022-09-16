@@ -1,0 +1,28 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <td scope="col">#</td>
+      <td scope="col">Categoria</td>
+      <td scope="col">Autor</td>
+      <td scope="col">Titulo</td>
+      <td scope="col">fecha</td>
+      <td width=275 align="center">Action</td>
+    </tr>
+  </thead>
+  <tbody *ngFor="let blog of blogs">
+     
+        <td scope="row">{{blog.idBlog}}</td>
+        <td>{{blog.categoria}}</td>
+        <td>{{blog.autor}}</td>
+        <td>{{blog.titulo}}</td>
+        <td>{{blog.fecha}}</td>
+        <td width=275> 
+            <a class="btn btn-info btn-sm" routerLink='/control'>Detail</a> 
+            <a class="btn btn-success btn-sm" routerLink='/control/edit/{{blog.idBlog}}'>Edit</a>
+            <a class="btn btn-danger btn-sm" (click)="deleteBlog(blog.idBlog)">Delete</a>
+        </td>
+      
+    
+  </tbody>
+ 
+</table>

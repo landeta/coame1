@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/dashboard">Dashboard</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item"><a routerLink="/control" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a routerLink="/control/addarticulo" class="nav-link active" aria-current="page">Add Articulo</a></li>
+        <li class="nav-item"><a routerLink="/control/listarticulo" class="nav-link active" aria-current="page">Listar Articulo</a></li>
+        <li class="nav-item"><a routerLink="/control/addblog" class="nav-link active" aria-current="page">Add Blog</a></li>
+        <li class="nav-item"><a routerLink="/control/listblog" class="nav-link active" aria-current="page">Listar Blog</a></li>
+        
+        <li class="nav-item"> <a routerLink="/control/mod" class="nav-link active" aria-current="page">Modificar</a>
+        </li>
+        <li class="nav-item"><a routerLink="/control/delet" class="nav-link active" aria-current="page">Borrar</a></li>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+
+<!-- <router-outlet></router-outlet> -->

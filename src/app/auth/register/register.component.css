@@ -1,0 +1,140 @@
+.container {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
+  body {
+    min-width: 992px !important;
+  }
+  .container {
+    min-width: 992px !important;
+  }
+  .page {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100%;
+  } 
+.page-single {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  
+.m-auto {
+    margin: auto !important;
+  }
+  
+  .mt-auto,
+  .my-auto {
+    margin-top: auto !important;
+  }
+  
+  .mr-auto,
+  .mx-auto {
+    margin-right: auto !important;
+  }
+  
+  .mb-auto,
+  .my-auto {
+    margin-bottom: auto !important;
+  }
+  
+  .ml-auto,
+  .mx-auto {
+    margin-left: auto !important;
+  }
+  .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 40, 100, 0.12);
+    border-radius: 3px;
+  }
+  
+  .card > hr {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .card > .list-group:first-child .list-group-item:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  
+  .card > .list-group:last-child .list-group-item:last-child {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  
+  .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.5rem;
+  }
+  
+  .card-title {
+    margin-bottom: 1.5rem;
+  }
+  .card-title {
+    font-size: 1.125rem;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+  .card-title a {
+    color: inherit;
+  }
+  
+  .card-title:only-child {
+    margin-bottom: 0;
+  }
+  
+  .card-title small,
+  .card-subtitle {
+    color: #9aa0ac;
+    font-size: 0.875rem;
+    display: block;
+    margin: -.75rem 0 1rem;
+    line-height: 1.1;
+    font-weight: 400;
+  }

@@ -1,0 +1,6 @@
+.recorte{
+    width: 230px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+}
